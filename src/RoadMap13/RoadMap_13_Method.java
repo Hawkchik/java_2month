@@ -1,3 +1,5 @@
+package RoadMap13;
+
 public class RoadMap_13_Method {
 
     public static int binarySearch(int massiv[], int b) {
