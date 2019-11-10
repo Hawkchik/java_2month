@@ -3,7 +3,7 @@ package RoadMap13;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class RoadMap_13 {
+public class RoadMap13 {
     public static void main(String[] args) {
         System.out.println("Введите кол-во элементов массива");
         Scanner scanner = new Scanner(System.in);
@@ -23,7 +23,7 @@ public class RoadMap_13 {
        System.out.println(Arrays.toString(massiv));
         System.out.println("Введите число, которое входит в массив");
         int b = scanner.nextInt();
-        int c =RoadMap_13_Method.binarySearch(massiv,b);
+        int c =RoadMap13_Method.binarySearch(massiv,b);
         if(c>-1){
             System.out.println("Элемент входит в массив");
         }
