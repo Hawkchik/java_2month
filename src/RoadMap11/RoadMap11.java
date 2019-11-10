@@ -16,6 +16,28 @@ public class RoadMap11 {
 
         }
         System.out.println(Arrays.toString(massiv));
+        int b = scanner.nextInt();
+        int massiv2[]=new int[a];
+
+for (int i=0;i<a;i++){
+    if (massiv[i]==b){
+
+        for (int k=0; k<a;k++){
+
+            massiv2[k]=massiv[k+1];
+
+            a--;
+
+        }
 
     }
+
 }
+
+        System.out.println(Arrays.toString(massiv2));
+        }
+
+
+
+    }
+
