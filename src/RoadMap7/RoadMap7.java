@@ -9,7 +9,7 @@ public class RoadMap7 {
 
         Scanner scanner = new Scanner(System.in);
         int a = scanner.nextInt();
-        int b =a;
+        int b = a;
         int array[] = new int[a];
         int array2[] = new int[b];
         //Присваиваем случайное число
@@ -31,5 +31,5 @@ public class RoadMap7 {
         System.out.println(methods.comeBack());
 
 
-
-    }}
+    }
+}
