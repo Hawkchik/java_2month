@@ -15,14 +15,15 @@ public class RoadMap10 {
         }
 
 
-        for (int i =0; i<99;i++) {
+        for (int i = 0; i < 99; i++) {
             Prostoe_method one = new Prostoe_method();
-            if (one.isprime(massiv[i])==1){
+            if (one.isprime(massiv[i]) == 1) {
                 myVar.add(massiv[i]);
 
             }
         }
 
         System.out.println(myVar);
-    }}
+    }
+}
 
