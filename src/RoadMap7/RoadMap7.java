@@ -24,6 +24,7 @@ public class RoadMap7 {
 
             array2[i] = (int) (Math.random() * 10);
         }
+        Arrays.sort(array2);
         System.out.println(Arrays.toString(array2));
 
 

@@ -18,13 +18,22 @@ public class Methods {
 
     // Метод логики, надо будет подумать
     public int comeBack() {
-        int c = array[0];
+        Random random = new Random();
+        boolean chanceoftrue = false;
+        Random k = random;
+
+
+
+
+        int c = array[array.length-1];
+        int m = Arrays.stream(array2).sum();
+        //System.out.println(m);
+        int p=(int) ((Math.random()*m)+1);
+
         for (int i = 0; i < array2.length - 1; i++) {
-            int m = Arrays.stream(array2).sum();// Общая вероятность
-           // System.out.println(m);
+
             int b = array2[i];
-            int v=(int) (Math.random()*10);
-            if (v+(m-b) >=(m))
+            if (p+b>=m)
             {
                 return array[i];
             }
