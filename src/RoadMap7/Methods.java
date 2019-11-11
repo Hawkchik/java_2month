@@ -28,12 +28,13 @@ public class Methods {
         int c = array[array.length-1];
         int m = Arrays.stream(array2).sum();
         //System.out.println(m);
-        int p=(int) ((Math.random()*m)+1);
+
 
         for (int i = 0; i < array2.length - 1; i++) {
 
             int b = array2[i];
-            if (p+b>=m)
+            int p=(int) ((Math.random()*m)+1+b);
+            if (p>=m-b)
             {
                 return array[i];
             }
