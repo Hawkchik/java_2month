@@ -18,15 +18,13 @@ public class Methods {
 
     // Метод логики, надо будет подумать
     public int comeBack() {
-        Random random = new Random();
-        boolean chanceoftrue = false;
-        Random k = random;
         int c = array[0];
         for (int i = 0; i < array2.length - 1; i++) {
             int m = Arrays.stream(array2).sum();// Общая вероятность
            // System.out.println(m);
             int b = array2[i];
-            if (chanceoftrue =(int) (Math.random()*100)+(10*m-b) <=(m*10))
+            int v=(int) (Math.random()*10);
+            if (v+(m-b) >=(m))
             {
                 return array[i];
             }
