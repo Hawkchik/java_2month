@@ -1,5 +1,6 @@
 package RoadMap7;
 
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -22,11 +23,12 @@ public class Methods {
         Random k = random;
         int c = array[0];
         for (int i = 0; i < array2.length - 1; i++) {
+            int m = Arrays.stream(array2).sum();// Общая вероятность
+           // System.out.println(m);
             int b = array2[i];
-            chanceoftrue = (random.nextInt(b) == 0) ? true : false;
-            if (chanceoftrue == true) {
-                c = array[i];
-                break;
+            if (chanceoftrue =(int) (Math.random()*100)+(10*m-b) <=(m*10))
+            {
+                return array[i];
             }
         }
 

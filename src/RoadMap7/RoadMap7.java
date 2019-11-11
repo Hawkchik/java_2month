@@ -15,7 +15,7 @@ public class RoadMap7 {
         //Присваиваем случайное число
         for (int i = 0; i < a; i++) {
 
-            array[i] = (int) (Math.random() * +100);
+            array[i] = (int) (Math.random() * 100);
         }
         System.out.println(Arrays.toString(array));
 
