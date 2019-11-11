@@ -18,14 +18,8 @@ public class Methods {
 
     // Метод логики, надо будет подумать
     public int comeBack() {
-        Random random = new Random();
-        boolean chanceoftrue = false;
-        Random k = random;
 
-
-
-
-        int c = array[array.length-1];
+        int c = array[array.length - 1];
         int m = Arrays.stream(array2).sum();
         //System.out.println(m);
 
@@ -33,9 +27,8 @@ public class Methods {
         for (int i = 0; i < array2.length - 1; i++) {
 
             int b = array2[i];
-            int p=(int) ((Math.random()*m)+1+b);
-            if (p>=m-b)
-            {
+            int p = (int) ((Math.random() * m));
+            if (p >= m - b) {
                 return array[i];
             }
         }
